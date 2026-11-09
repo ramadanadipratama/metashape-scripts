@@ -77,6 +77,21 @@ def chapter_files(book: Path, meta: dict) -> list:
     return sorted((book / "chapters").glob("*.md"), key=lambda p: p.name)
 
 
+def compress_image(src: Path, dst_dir: Path) -> Path:
+    """Shrink an illustration to a JPEG (max 1600 px wide) so the .docx stays small."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return src
+    dst = dst_dir / (src.stem + ".jpg")
+    with Image.open(src) as im:
+        im = im.convert("RGB")
+        if im.width > 1600:
+            im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
+        im.save(dst, "JPEG", quality=85, optimize=True)
+    return dst
+
+
 def build(slug: str) -> Path:
     book = ROOT / "books" / slug
     meta = json.loads((book / "book.json").read_text(encoding="utf-8"))
@@ -85,6 +100,8 @@ def build(slug: str) -> Path:
         sys.exit(f"Tidak ada bab di {book / 'chapters'}")
 
     parts, toc, missing = [], [], []
+    workdir = tempfile.TemporaryDirectory()
+    imgdir = Path(workdir.name)
     for n, f in enumerate(files, 1):
         text = f.read_text(encoding="utf-8")
         m = re.match(r"#\s+(.+)", text)
@@ -98,7 +115,7 @@ def build(slug: str) -> Path:
             if not p.exists():
                 missing.append(rel)
                 return ""
-            return f"![{alt}]({p}){{width=100%}}"
+            return f"![{alt}]({compress_image(p, imgdir)}){{width=100%}}"
 
         text = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", img, text)
         parts.append(text)
@@ -122,6 +139,7 @@ def build(slug: str) -> Path:
         src.write_text(md, encoding="utf-8")
         subprocess.run(["pandoc", str(src), "-f", "markdown", "-t", "docx",
                         "--reference-doc", str(ref), "-o", str(out)], check=True)
+    workdir.cleanup()
     for rel in missing:
         print(f"Peringatan: gambar tidak ditemukan, dilewati: {rel}")
     print(out)
