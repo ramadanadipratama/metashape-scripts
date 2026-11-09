@@ -24,7 +24,7 @@ Istilah-istilah penting di buku ini, diurutkan sesuai abjad dan dijelaskan denga
 | **Fraksi karbon** | Bagian biomassa yang berupa karbon. Nilai standar IPCC untuk kayu adalah 0,47 | 2 |
 | **F-score** | Nilai gabungan precision dan recall untuk menilai akurasi tree counting | 7 |
 | **GCP** (*Ground Control Point*) | Titik kontrol di tanah yang koordinatnya diukur, untuk mengikat hasil fotogrametri ke posisi sebenarnya | 4 |
-| **GNSS** | Sistem navigasi satelit (termasuk GPS) untuk mengukur koordinat | 3, 5 |
+| **GNSS** | Sistem navigasi satelit (termasuk GPS) untuk mengukur koordinat. Alat yang dipakai di buku ini: Emlid Reach RS4 Pro | 3, 5 |
 | **GSD** (*Ground Sampling Distance*) | Ukuran satu piksel foto di permukaan, misalnya 3 cm | 4 |
 | **Hektare** (ha) | Satuan luas: 100 × 100 m atau 10.000 m² | 9 |
 | **Inventarisasi hutan** | Kegiatan mengukur dan mencatat pohon di hutan, biasanya lewat plot sampel | 1 |

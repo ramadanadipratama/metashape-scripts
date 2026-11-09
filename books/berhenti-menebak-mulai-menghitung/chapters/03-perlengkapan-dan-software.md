@@ -18,7 +18,7 @@ Contoh drone yang sering dipakai untuk pemetaan hutan:
 
 | Kelas | Contoh | Catatan |
 | --- | --- | --- |
-| Ringkas, ekonomis | DJI Mavic 3 Enterprise (M3E) | Mechanical shutter, bisa dipasang modul RTK, mudah dibawa ke hutan |
+| Ringkas, ekonomis | DJI Matrice 4 Enterprise (M4E) | Kamera 4/3 dengan mechanical shutter, mendukung RTK, mudah dibawa ke hutan |
 | Pemetaan klasik | DJI Phantom 4 RTK | Banyak dipakai, suku cadang dan baterai mudah dicari |
 | Area luas, resolusi tinggi | DJI Matrice 350 RTK + kamera Zenmuse P1 | Kamera full-frame 45 MP, cocok untuk ribuan hektare |
 | Fixed-wing / VTOL | Berbagai merek | Jangkauan jauh, tapi butuh area lepas landas yang lebih luas |
@@ -35,7 +35,7 @@ Ingat dari Bab 1: drone tidak bisa melihat diameter batang. Karena itu kamu teta
 | --- | --- | --- |
 | **Pita diameter** (phi band) | Mengukur diameter batang setinggi dada langsung dalam cm | Meteran kain, lalu keliling dibagi 3,14 |
 | **Clinometer atau hypsometer** | Mengukur tinggi pohon | Aplikasi clinometer di HP + meteran jarak |
-| **GNSS** (handheld atau RTK) | Mencatat koordinat pusat plot dan pohon | GPS HP, tapi akurasinya lebih rendah |
+| **GNSS RTK** Emlid Reach RS4 Pro | Mencatat koordinat GCP, check point, pusat plot, dan pohon; bisa juga dipakai sebagai base station | GPS HP, tapi akurasinya lebih rendah |
 | **Meteran 30–50 m** | Mengukur jari-jari atau sisi plot | – |
 | **Kompas** | Menentukan arah saat membuat plot | Kompas di HP |
 | **Pita penanda (flagging tape)** | Menandai batas plot dan pohon yang sudah diukur | Tali rafia berwarna |
@@ -90,7 +90,7 @@ Setelah alat siap, langkah berikutnya adalah merencanakan penerbangan. Di hutan,
 ## Kesimpulan Bab
 
 - Metode ini cukup memakai **drone kamera RGB**. Utamakan sensor yang cukup besar, **mechanical shutter**, dan **RTK/PPK** supaya posisi foto akurat tanpa banyak GCP.
-- Peralatan lapangan tetap wajib untuk plot sampel: **pita diameter, clinometer, GNSS, meteran, penanda plot**, dan **daftar berat jenis kayu**.
+- Peralatan lapangan tetap wajib untuk plot sampel: **pita diameter, clinometer, GNSS RTK Emlid Reach RS4 Pro, meteran, penanda plot**, dan **daftar berat jenis kayu**.
 - Software terbagi empat: **fotogrametri** (Metashape atau WebODM), **GIS** (QGIS), **tree counting** (lidR atau DeepForest), dan **perhitungan** (spreadsheet atau Python/R).
 - Fotogrametri hutan butuh komputer yang cukup kuat: RAM 32 GB, GPU NVIDIA 8 GB, dan SSD.
 - Mulailah dari **paket Belajar** di area kecil, lalu naik ke paket berikutnya setelah alurnya kamu kuasai.

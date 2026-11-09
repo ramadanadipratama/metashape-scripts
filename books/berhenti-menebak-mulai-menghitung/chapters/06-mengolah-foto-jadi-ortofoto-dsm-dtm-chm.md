@@ -36,7 +36,7 @@ Jadi DTM harus diambil dari sumber lain. Pilihannya:
 | **Titik tanah di celah tajuk** (Classify Ground Points di Metashape, lalu interpolasi) | Dari data yang sama, resolusi tinggi | Hanya bagus kalau banyak celah, misalnya hutan jarang atau kebun |
 | **DTM dari LiDAR** (data lama atau survei terpisah) | Paling akurat di hutan rapat | Mahal kalau harus survei LiDAR |
 | **DEMNAS** dari BIG (resolusi sekitar 8 m) | Gratis, mencakup seluruh Indonesia | Resolusi kasar; di beberapa lokasi bisa masih mengandung tinggi vegetasi |
-| **Model tanah dari GNSS lapangan** (titik di plot dan jalan) | Akurat di titik ukur | Jarang, butuh interpolasi |
+| **Model tanah dari GNSS lapangan** (titik di plot dan jalan, diukur dengan Emlid Reach RS4 Pro) | Akurat di titik ukur | Jarang, butuh interpolasi |
 
 Untuk hutan tanaman atau kebun dengan banyak celah, cara pertama sering sudah cukup. Untuk hutan alam rapat, **DTM LiDAR** adalah pilihan terbaik kalau tersedia. Kalau tidak ada, DEMNAS bisa dipakai dengan catatan bahwa tinggi pohon absolut punya ketidakpastian lebih besar, dan harus dicek dengan tinggi pohon yang diukur di plot.
 

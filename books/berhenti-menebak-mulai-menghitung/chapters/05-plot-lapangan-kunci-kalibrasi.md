@@ -57,7 +57,7 @@ Tulis keterangan setiap kali kamu memakai aturan khusus. Konsistensi lebih penti
 
 Data plot hanya berguna kalau bisa dicocokkan dengan hasil drone. Kuncinya adalah **posisi**.
 
-1. **Ukur koordinat pusat plot** dengan GNSS. Pakai RTK kalau ada. Kalau hanya GPS handheld, rata-ratakan posisi beberapa menit, dan sadari bahwa di bawah tajuk akurasinya bisa meleset beberapa meter.
+1. **Ukur koordinat pusat plot** dengan GNSS RTK Emlid Reach RS4 Pro. Di bawah tajuk rapat sinyal satelit bisa melemah, jadi rekam beberapa menit dan pastikan statusnya *fix* sebelum menyimpan titik. Kalau belum punya receiver RTK dan hanya ada GPS handheld, rata-ratakan posisi beberapa menit, dan sadari bahwa di bawah tajuk akurasinya bisa meleset beberapa meter.
 2. **Catat posisi setiap pohon relatif terhadap pusat plot**: arah (azimut dari kompas) dan jarak (meter). Dari dua angka ini, koordinat setiap pohon bisa dihitung.
 3. **Beri setiap pohon ID unik**, misalnya `P07-T15` untuk plot 7 pohon 15.
 

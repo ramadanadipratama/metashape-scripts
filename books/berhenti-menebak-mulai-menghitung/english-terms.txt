@@ -54,3 +54,5 @@ workstation
 remote
 zoom
 shapefile
+receiver
+base station

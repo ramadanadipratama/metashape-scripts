@@ -64,7 +64,7 @@ Patokan praktis: kalau ranting di puncak pohon terlihat bergoyang dari bawah, tu
 
 ## GCP dan Check Point di Area Berhutan
 
-**GCP** (*Ground Control Point*) adalah titik di tanah yang koordinatnya diukur dengan GNSS, lalu dipakai untuk mengikat hasil fotogrametri ke posisi sebenarnya. **Check point** adalah titik serupa yang tidak dipakai untuk koreksi, hanya untuk menguji akurasi.
+**GCP** (*Ground Control Point*) adalah titik di tanah yang koordinatnya diukur dengan GNSS RTK (aku memakai Emlid Reach RS4 Pro), lalu dipakai untuk mengikat hasil fotogrametri ke posisi sebenarnya. **Check point** adalah titik serupa yang tidak dipakai untuk koreksi, hanya untuk menguji akurasi.
 
 Masalahnya, di hutan rapat tanah hampir tidak terlihat dari udara. Target GCP di bawah tajuk tidak akan tampak di foto. Ada beberapa strategi:
 
