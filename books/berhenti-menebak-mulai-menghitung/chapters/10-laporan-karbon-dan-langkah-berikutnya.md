@@ -14,7 +14,7 @@ Laporan karbon yang dipercaya menjawab enam pertanyaan:
 | **2. Area dan cakupan** | Batas area, luas, tipe tutupan, tanggal survei, dan kolam karbon yang dihitung |
 | **3. Data** | Drone dan kamera, parameter terbang, jumlah dan lokasi plot, sumber DTM |
 | **4. Metode** | Pengaturan tree counting dan hasil uji akurasinya, model diameter, persamaan alometrik, berat jenis kayu, fraksi karbon, rasio akar, faktor koreksi |
-| **5. Hasil** | Total dan per hektar, per tipe tutupan, dalam ton C dan ton CO₂e, beserta rentang ketidakpastian |
+| **5. Hasil** | Total dan per hektare, per tipe tutupan, dalam ton C dan ton CO₂e, beserta rentang ketidakpastian |
 | **6. Batasan** | Apa yang tidak dihitung, bagian data yang kurang bagus, dan asumsi yang dipakai |
 
 Bagian **batasan** sering dilewati karena dianggap membuat laporan terlihat lemah. Padahal justru di bagian inilah kepercayaan dibangun. Contoh batasan yang jujur:
@@ -38,7 +38,7 @@ Tips membuat peta yang jelas di QGIS:
 
 - Pakai **skema warna berurutan** (misalnya hijau muda ke hijau tua) untuk kepadatan karbon. Hindari warna pelangi yang membingungkan.
 - Selalu cantumkan **legenda dengan satuan**, **skala**, **arah utara**, **sistem koordinat**, dan **tanggal data**.
-- Tambahkan **grafik sederhana**, misalnya stok karbon per tipe tutupan dalam diagram batang, supaya pembaca non-teknis langsung menangkap intinya.
+- Tambahkan **grafik sederhana**, misalnya stok karbon per tipe tutupan dalam diagram batang, supaya pembaca nonteknis langsung menangkap intinya.
 
 ## Pemantauan Berkala
 
@@ -69,7 +69,7 @@ Beberapa hal penting sebelum terjun:
 
 - **Pahami standar yang dipakai klien.** Proyek karbon yang menghasilkan kredit mengikuti metodologi tertentu, misalnya standar internasional seperti Verra, atau aturan nasional dan pencatatan di **Sistem Registri Nasional Pengendalian Perubahan Iklim (SRN PPI)**. Data drone biasanya menjadi bagian pendukung metodologi itu, bukan pengganti seluruhnya.
 - **Bermitra.** Bekerja sama dengan ahli kehutanan, tim inventarisasi lapangan, atau konsultan karbon membuat layananmu lebih lengkap dan lebih dipercaya.
-- **Mulai dari proyek kecil yang tuntas.** Satu laporan lengkap untuk 20 hektar kebun bisa menjadi portofolio yang meyakinkan untuk proyek berikutnya yang lebih besar.
+- **Mulai dari proyek kecil yang tuntas.** Satu laporan lengkap untuk 20 hektare kebun bisa menjadi portofolio yang meyakinkan untuk proyek berikutnya yang lebih besar.
 
 Kamu memulai buku ini dengan pertanyaan yang bikin bingung: "Hutan ini simpan berapa ton karbon?" Sekarang kamu tahu cara menjawabnya. Mulai dari merencanakan terbang, mengukur plot, membuat CHM, menghitung pohon, mengubahnya jadi biomassa dan karbon, sampai menuliskannya dalam laporan yang jujur.
 

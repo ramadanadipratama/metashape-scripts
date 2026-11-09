@@ -8,7 +8,7 @@ Setelah setiap pohon punya angka biomassa, langkah berikutnya terasa sederhana: 
 
 **1. Pastikan satuan konsisten.** Biomassa dari rumus alometrik dalam **kg**. Ubah total ke **ton** (dibagi 1.000) sebelum masuk laporan.
 
-**2. Hitung per hektar.** Total biomassa dibagi luas area (ha) menghasilkan **ton biomassa per hektar**. Angka per hektar memudahkan perbandingan dengan hutan lain dan dengan literatur.
+**2. Hitung per hektare.** Total biomassa dibagi luas area (ha) menghasilkan **ton biomassa per hektare**. Angka per hektare memudahkan perbandingan dengan hutan lain dan dengan literatur.
 
 **3. Buat peta kepadatan.** Bagi area menjadi grid, misalnya petak 50 × 50 m atau 1 ha. Jumlahkan biomassa pohon di setiap petak, lalu warnai petaknya. Peta ini langsung menunjukkan bagian hutan yang paling kaya karbon dan bagian yang sudah terdegradasi.
 
@@ -22,7 +22,7 @@ Akar tidak bisa difoto drone dan sangat mahal untuk digali. Karena itu, biomassa
 
 > **BGB = AGB × R**
 
-Nilai R tersedia di panduan IPCC untuk berbagai tipe hutan. Untuk **hutan hujan tropis**, IPCC 2006 memberikan nilai **R = 0,37**. Tipe hutan lain punya nilai berbeda, dan untuk beberapa tipe nilainya juga bergantung pada besar biomassa per hektar. Pilih nilai yang sesuai dengan tipe hutanmu, dan tulis sumbernya.
+Nilai R tersedia di panduan IPCC untuk berbagai tipe hutan. Untuk **hutan hujan tropis**, IPCC 2006 memberikan nilai **R = 0,37**. Tipe hutan lain punya nilai berbeda, dan untuk beberapa tipe nilainya juga bergantung pada besar biomassa per hektare. Pilih nilai yang sesuai dengan tipe hutanmu, dan tulis sumbernya.
 
 Jadi total biomassa pohon hidup adalah:
 
@@ -44,7 +44,7 @@ Faktor koreksi juga bisa sekaligus menyerap kesalahan tree counting (FN dan FP),
 
 | Langkah | Hitungan | Hasil |
 | --- | --- | --- |
-| AGB per hektar dari drone | 18.000 ÷ 100 | 180 t/ha |
+| AGB per hektare dari drone | 18.000 ÷ 100 | 180 t/ha |
 | Koreksi pohon terlewat | 180 × 1,12 | 201,6 t/ha |
 | Tambah akar (R = 0,37) | 201,6 × 1,37 | 276,2 t/ha |
 | Karbon | 276,2 × 0,47 | **129,8 t C/ha** |
@@ -78,7 +78,7 @@ Menuliskan rentang tidak membuatmu terlihat kurang ahli. Justru sebaliknya, kare
 
 ## Kesimpulan Bab
 
-- Jumlahkan biomassa semua pohon, ubah ke **ton**, hitung **per hektar**, buat **peta kepadatan**, dan pisahkan per **tipe tutupan**.
+- Jumlahkan biomassa semua pohon, ubah ke **ton**, hitung **per hektare**, buat **peta kepadatan**, dan pisahkan per **tipe tutupan**.
 - Tambahkan **biomassa akar** dengan rasio akar-pucuk. Untuk hutan hujan tropis, IPCC 2006 memberi **R = 0,37**.
 - Koreksi **pohon yang tidak terlihat** dengan faktor dari data plot: biomassa semua pohon dibagi biomassa pohon yang tajuknya terlihat.
 - Contoh 100 ha: 180 t AGB/ha → 201,6 (koreksi) → 276,2 (+ akar) → **129,8 t C/ha** → **476 t CO₂e/ha**, total **±47.600 t CO₂e**.

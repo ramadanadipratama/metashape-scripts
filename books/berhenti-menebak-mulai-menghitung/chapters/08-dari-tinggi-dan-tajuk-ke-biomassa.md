@@ -15,7 +15,7 @@ Jadi strateginya:
 3. Model itu kita pakai untuk **menaksir D semua pohon** hasil tree counting.
 4. Setelah D diketahui, kita hitung **biomassa** dengan persamaan alometrik.
 
-Ada juga pendekatan lain yang tidak lewat diameter, yaitu memodelkan **biomassa per hektar langsung dari statistik CHM** (misalnya tinggi rata-rata tajuk di setiap plot). Cara ini disebut pendekatan berbasis area. Pendekatan ini bagus untuk area luas, tapi buku ini fokus pada pendekatan **per pohon**, karena sejalan dengan tree counting dan hasilnya bisa dicek pohon demi pohon.
+Ada juga pendekatan lain yang tidak lewat diameter, yaitu memodelkan **biomassa per hektare langsung dari statistik CHM** (misalnya tinggi rata-rata tajuk di setiap plot). Cara ini disebut pendekatan berbasis area. Pendekatan ini bagus untuk area luas, tapi buku ini fokus pada pendekatan **per pohon**, karena sejalan dengan tree counting dan hasilnya bisa dicek pohon demi pohon.
 
 ## Membangun Model dari Data Plot
 
@@ -46,7 +46,7 @@ Angka a dan b di contoh ini **hanya ilustrasi**. Setiap hutan punya nilainya sen
 Setelah model siap, langkahnya tinggal diulang untuk setiap baris di tabel pohon:
 
 1. Hitung **D** dari H dan CD dengan model di atas.
-2. Tentukan **ρ** (berat jenis kayu), lihat sub-bab berikutnya.
+2. Tentukan **ρ** (berat jenis kayu), lihat subbab berikutnya.
 3. Hitung **AGB = 0,0673 × (ρ × D² × H)^0,976**.
 
 Melanjutkan contoh tadi, dengan D = 45,3 cm, H = 25 m, dan ρ = 0,6 g/cm³:

@@ -4,7 +4,7 @@
 
 ## Pertanyaan yang Bikin Bingung: Hutan Ini Simpan Berapa Ton Karbon?
 
-Bayangkan kamu baru selesai memetakan 200 hektar hutan dengan drone. Fotonya tajam, ortofotonya mulus. Lalu klien bertanya satu hal sederhana: "Jadi, hutan ini menyimpan berapa ton karbon?"
+Bayangkan kamu baru selesai memetakan 200 hektare hutan dengan drone. Fotonya tajam, ortofotonya mulus. Lalu klien bertanya satu hal sederhana: "Jadi, hutan ini menyimpan berapa ton karbon?"
 
 Di titik ini banyak pilot drone terdiam. Orang kehutanan juga sering bingung, tapi dengan alasan berbeda. Mereka tahu cara mengukur pohon di lapangan, tapi tidak terbayang mengukur puluhan ribu pohon satu per satu.
 
@@ -17,7 +17,7 @@ Pertanyaan soal karbon makin sering muncul, dan bukan cuma dari peneliti:
 
 Semuanya butuh **angka**, bukan perkiraan. Jawaban "kira-kira banyaklah" tidak bisa dimasukkan ke laporan. Angka yang terlalu tinggi bisa dianggap menyesatkan, dan angka yang terlalu rendah membuat nilai hutan terlihat kecil.
 
-Kabar baiknya, kamu tidak perlu memilih antara "mengukur semua pohon" dan "menebak". Ada jalan tengah yang sudah dipakai di banyak proyek: **menghitung pohon dari udara, mengukur tinggi dan tajuknya dengan fotogrametri, lalu mengkalibrasinya dengan sedikit data lapangan.** Cara inilah yang akan kita pelajari di buku ini.
+Kabar baiknya, kamu tidak perlu memilih antara "mengukur semua pohon" dan "menebak". Ada jalan tengah yang sudah dipakai di banyak proyek: **menghitung pohon dari udara, mengukur tinggi dan tajuknya dengan fotogrametri, lalu mengalibrasinya dengan sedikit data lapangan.** Cara inilah yang akan kita pelajari di buku ini.
 
 Selama bertahun-tahun mengerjakan perhitungan karbon dengan kombinasi tree counting dan fotogrametri, aku melihat pola yang sama. Orang biasanya tidak gagal karena rumusnya sulit. Mereka gagal karena tidak tahu urutan kerjanya. Setelah urutannya jelas, semuanya jadi masuk akal. Jadi bab ini kita pakai untuk melihat peta besarnya dulu.
 
@@ -43,7 +43,7 @@ Kolam lain seperti serasah dan karbon tanah tetap penting, terutama di hutan gam
 
 ## Cara Lama vs Cara Drone
 
-Cara klasik menghitung karbon hutan adalah **inventarisasi lapangan**. Tim masuk ke hutan, membuat plot sampel, lalu mengukur diameter dan tinggi setiap pohon di plot. Data plot kemudian diolah dengan rumus untuk mendapatkan biomassa per hektar, lalu dikalikan ke seluruh luas hutan.
+Cara klasik menghitung karbon hutan adalah **inventarisasi lapangan**. Tim masuk ke hutan, membuat plot sampel, lalu mengukur diameter dan tinggi setiap pohon di plot. Data plot kemudian diolah dengan rumus untuk mendapatkan biomassa per hektare, lalu dikalikan ke seluruh luas hutan.
 
 Cara ini akurat di dalam plot. Masalahnya ada di luar plot. Dengan beberapa plot kecil, kamu harus berasumsi hutan di sekitarnya mirip dengan plot. Padahal hutan jarang seragam. Ada bagian yang rapat, ada yang bekas tebangan, ada lembah dan punggungan. Semakin luas area, semakin besar risiko angkanya meleset.
 
@@ -72,7 +72,7 @@ Sebelum masuk ke detail, mari lihat seluruh perjalanan dalam satu alur. Simpan a
 3. **Olah foto menjadi ortofoto, DSM, DTM, dan CHM** (Bab 6). CHM, atau model tinggi tajuk, memberi tahu seberapa tinggi setiap bagian tajuk dari tanah.
 4. **Hitung pohon dan ukur tajuknya** (Bab 7). Setiap puncak tajuk dihitung sebagai satu pohon, lengkap dengan tinggi dan lebar tajuknya.
 5. **Ubah ukuran pohon menjadi biomassa** (Bab 2 dan 8). Pakai model dari data plot dan persamaan alometrik.
-6. **Jumlahkan menjadi stok karbon** (Bab 9). Tambahkan akar, hitung per hektar, dan nyatakan ketidakpastiannya.
+6. **Jumlahkan menjadi stok karbon** (Bab 9). Tambahkan akar, hitung per hektare, dan nyatakan ketidakpastiannya.
 7. **Laporkan** (Bab 10). Sajikan angka, peta, metode, dan batasannya.
 
 Kalau diringkas jadi satu kalimat: **foto drone → pohon → ukuran pohon → biomassa → karbon → CO₂.**

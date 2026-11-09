@@ -20,10 +20,10 @@ Contoh drone yang sering dipakai untuk pemetaan hutan:
 | --- | --- | --- |
 | Ringkas, ekonomis | DJI Mavic 3 Enterprise (M3E) | Mechanical shutter, bisa dipasang modul RTK, mudah dibawa ke hutan |
 | Pemetaan klasik | DJI Phantom 4 RTK | Banyak dipakai, suku cadang dan baterai mudah dicari |
-| Area luas, resolusi tinggi | DJI Matrice 350 RTK + kamera Zenmuse P1 | Kamera full-frame 45 MP, cocok untuk ribuan hektar |
+| Area luas, resolusi tinggi | DJI Matrice 350 RTK + kamera Zenmuse P1 | Kamera full-frame 45 MP, cocok untuk ribuan hektare |
 | Fixed-wing / VTOL | Berbagai merek | Jangkauan jauh, tapi butuh area lepas landas yang lebih luas |
 
-Kalau kamu baru mulai dan anggarannya terbatas, drone kelas ringkas dengan RTK sudah cukup untuk proyek puluhan sampai ratusan hektar.
+Kalau kamu baru mulai dan anggarannya terbatas, drone kelas ringkas dengan RTK sudah cukup untuk proyek puluhan sampai ratusan hektare.
 
 > **Tips:** Bawa baterai cadangan minimal tiga kali jumlah yang kamu kira cukup. Di hutan, kamu sering harus terbang ulang karena angin atau awan, dan lokasi pengisian daya biasanya jauh.
 
@@ -69,7 +69,7 @@ Alur kerja di buku ini butuh empat jenis software. Untuk setiap jenis, ada pilih
 
 Kebutuhan komputernya cukup berat untuk fotogrametri hutan. Sebagai patokan:
 
-- RAM **32 GB** (64 GB untuk proyek ratusan hektar)
+- RAM **32 GB** (64 GB untuk proyek ratusan hektare)
 - Kartu grafis **NVIDIA dengan VRAM 8 GB** atau lebih
 - **SSD** minimal 1 TB untuk data kerja
 
@@ -80,10 +80,10 @@ Kamu tidak harus membeli semuanya sekaligus. Ini tiga paket yang bisa kamu pilih
 | Paket | Isi | Cocok untuk |
 | --- | --- | --- |
 | **Belajar** | Drone kamera yang sudah kamu punya + WebODM + QGIS + spreadsheet + pita diameter | Latihan di kebun atau hutan kecil, memahami alur |
-| **Proyek pertama** | Drone dengan RTK + Metashape (atau WebODM) + QGIS + lidR/DeepForest + alat plot lengkap | Proyek puluhan sampai ratusan hektar untuk klien |
-| **Profesional** | Drone RTK kelas atas atau kamera full-frame + Metashape + komputer workstation + tim lapangan terlatih | Proyek ribuan hektar dan pemantauan rutin |
+| **Proyek pertama** | Drone dengan RTK + Metashape (atau WebODM) + QGIS + lidR/DeepForest + alat plot lengkap | Proyek puluhan sampai ratusan hektare untuk klien |
+| **Profesional** | Drone RTK kelas atas atau kamera full-frame + Metashape + komputer workstation + tim lapangan terlatih | Proyek ribuan hektare dan pemantauan rutin |
 
-Saranku: mulailah dari paket **Belajar**. Coba terbang di area kecil, misalnya 5–10 hektar kebun atau hutan kota. Buat CHM, hitung pohonnya, lalu bandingkan dengan hitungan manual. Pengalaman satu proyek kecil yang tuntas jauh lebih berharga daripada membeli alat mahal tanpa paham alurnya.
+Saranku: mulailah dari paket **Belajar**. Coba terbang di area kecil, misalnya 5–10 hektare kebun atau hutan kota. Buat CHM, hitung pohonnya, lalu bandingkan dengan hitungan manual. Pengalaman satu proyek kecil yang tuntas jauh lebih berharga daripada membeli alat mahal tanpa paham alurnya.
 
 Setelah alat siap, langkah berikutnya adalah merencanakan penerbangan. Di hutan, aturan terbangnya sedikit berbeda dari pemetaan biasa, dan perbedaan kecil itu menentukan apakah data kamu bisa dihitung atau tidak.
 

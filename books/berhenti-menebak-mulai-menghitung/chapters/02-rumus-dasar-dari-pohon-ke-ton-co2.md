@@ -41,7 +41,7 @@ Jangan takut dengan pangkat 0,976. Angka ini sangat dekat dengan 1, jadi kamu bi
 
 Kenapa D dikuadratkan? Karena luas penampang batang sebanding dengan diameter kuadrat. Kalau dikalikan tinggi, hasilnya kira-kira sebanding dengan volume batang. Volume dikali berat jenis memberi berat. Jadi rumus ini sebenarnya cukup masuk akal secara fisika.
 
-Selain persamaan pan-tropis seperti Chave 2014, ada juga **persamaan lokal** yang dibuat untuk jenis pohon atau tipe hutan tertentu di Indonesia. Kalau tersedia persamaan lokal yang sesuai dengan lokasimu, persamaan itu biasanya lebih tepat. Yang penting, **tulis persamaan mana yang kamu pakai dan sumbernya** di laporan.
+Selain persamaan pantropis seperti Chave 2014, ada juga **persamaan lokal** yang dibuat untuk jenis pohon atau tipe hutan tertentu di Indonesia. Kalau tersedia persamaan lokal yang sesuai dengan lokasimu, persamaan itu biasanya lebih tepat. Yang penting, **tulis persamaan mana yang kamu pakai dan sumbernya** di laporan.
 
 > **Tips:** Jangan memakai persamaan alometrik di luar rentang data pembuatnya. Persamaan yang dibuat dari pohon berdiameter 5–60 cm belum tentu cocok untuk pohon raksasa berdiameter 150 cm.
 
@@ -67,7 +67,7 @@ Jadi rangkaian lengkapnya seperti tangga:
 6. ↓ × 44/12
 7. **CO₂ ekuivalen** (kg CO₂e)
 
-Satuan juga perlu diperhatikan. Rumus alometrik menghasilkan kilogram, sedangkan laporan biasanya memakai **ton** (1 ton = 1.000 kg). Untuk area, satuan yang umum adalah **ton C per hektar** atau **ton CO₂e per hektar**. Salah satuan adalah kesalahan yang paling sering, dan dampaknya bisa membuat angka meleset seribu kali lipat.
+Satuan juga perlu diperhatikan. Rumus alometrik menghasilkan kilogram, sedangkan laporan biasanya memakai **ton** (1 ton = 1.000 kg). Untuk area, satuan yang umum adalah **ton C per hektare** atau **ton CO₂e per hektare**. Salah satuan adalah kesalahan yang paling sering, dan dampaknya bisa membuat angka meleset seribu kali lipat.
 
 ## Latihan: Menghitung Karbon Satu Pohon
 
@@ -101,7 +101,7 @@ Jadi satu pohon meranti setinggi 25 meter dengan diameter 40 cm menyimpan sekita
 
 **Coba sendiri:** hitung pohon kedua dengan D = 25 cm, H = 18 m, dan ρ = 0,5 g/cm³. Kalau hitunganmu benar, hasilnya sekitar **308 kg biomassa**, **145 kg karbon**, dan **530 kg CO₂e**. Perhatikan, diameternya hanya sekitar 60% dari pohon pertama, tapi CO₂-nya hanya sekitar seperempat. Itulah efek diameter kuadrat yang kita bahas tadi.
 
-Sekarang bayangkan satu hektar hutan berisi ratusan pohon dengan ukuran berbeda-beda. Menghitung satu per satu dengan tangan jelas tidak mungkin. Karena itu, di bab-bab berikutnya kita akan membuat drone dan software mengerjakan bagian beratnya. Mulai dari menyiapkan perlengkapannya dulu.
+Sekarang bayangkan satu hektare hutan berisi ratusan pohon dengan ukuran berbeda-beda. Menghitung satu per satu dengan tangan jelas tidak mungkin. Karena itu, di bab-bab berikutnya kita akan membuat drone dan software mengerjakan bagian beratnya. Mulai dari menyiapkan perlengkapannya dulu.
 
 ## Kesimpulan Bab
 
@@ -109,4 +109,4 @@ Sekarang bayangkan satu hektar hutan berisi ratusan pohon dengan ukuran berbeda-
 - **Persamaan alometrik** menghubungkan ukuran dengan biomassa. Untuk hutan tropis, persamaan Chave 2014 banyak dipakai: **AGB = 0,0673 × (ρ × D² × H)^0,976**. Pakai persamaan lokal bila tersedia, dan selalu sebutkan sumbernya.
 - Biomassa diubah ke karbon dengan **× 0,47**, lalu ke CO₂ dengan **× 44/12**.
 - Diameter adalah ukuran paling berpengaruh. Kesalahan kecil pada diameter bisa membuat biomassa meleset besar.
-- Contoh satu pohon (D 40 cm, H 25 m, ρ 0,6) menyimpan sekitar **1.268 kg biomassa, 596 kg karbon, atau 2,19 ton CO₂e**. Perhatikan selalu satuan kg, ton, dan per hektar.
+- Contoh satu pohon (D 40 cm, H 25 m, ρ 0,6) menyimpan sekitar **1.268 kg biomassa, 596 kg karbon, atau 2,19 ton CO₂e**. Perhatikan selalu satuan kg, ton, dan per hektare.

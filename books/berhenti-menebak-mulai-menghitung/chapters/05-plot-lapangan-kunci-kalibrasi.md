@@ -14,14 +14,14 @@ Plot punya tiga tugas:
 2. **Validasi tree counting.** Membandingkan jumlah pohon hasil deteksi dengan jumlah pohon sebenarnya (Bab 7).
 3. **Koreksi pohon yang tidak terlihat.** Pohon kecil di bawah tajuk pohon besar tidak terlihat dari udara. Plot memberi tahu seberapa besar porsi biomassa yang "tersembunyi" itu (Bab 9).
 
-Kabar baiknya, kamu butuh jauh lebih sedikit plot dibanding inventarisasi penuh. Kalau plot dirancang dengan benar, sedikit data lapangan bisa mengkalibrasi ribuan pohon hasil hitungan drone.
+Kabar baiknya, kamu butuh jauh lebih sedikit plot dibanding inventarisasi penuh. Kalau plot dirancang dengan benar, sedikit data lapangan bisa mengalibrasi ribuan pohon hasil hitungan drone.
 
 ## Merancang Plot: Bentuk, Ukuran, dan Jumlah
 
 **Bentuk.** Ada dua pilihan umum:
 
 - **Plot lingkaran.** Mudah dibuat: cukup satu titik pusat dan seutas meteran. Plot lingkaran 0,1 ha punya jari-jari **17,84 m**.
-- **Plot persegi atau persegi panjang.** Lebih mudah dicocokkan dengan grid raster. Di Indonesia, **SNI 7724:2011** tentang pengukuran cadangan karbon hutan memakai plot bersarang, yaitu plot besar dengan sub-plot lebih kecil untuk pohon berukuran lebih kecil.
+- **Plot persegi atau persegi panjang.** Lebih mudah dicocokkan dengan grid raster. Di Indonesia, **SNI 7724:2011** tentang pengukuran cadangan karbon hutan memakai plot bersarang, yaitu plot besar dengan subplot lebih kecil untuk pohon berukuran lebih kecil.
 
 **Ukuran.** Untuk kalibrasi drone, plot sebaiknya cukup besar supaya berisi beberapa tajuk utuh. Plot **0,05–0,1 ha** adalah ukuran yang umum. Plot yang terlalu kecil membuat banyak tajuk terpotong di batas plot, sehingga sulit dicocokkan dengan hasil deteksi drone.
 

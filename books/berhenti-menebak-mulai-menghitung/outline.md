@@ -55,9 +55,9 @@ Tujuan: pembaca bisa membangun model sederhana dari data drone ke biomassa.
 Gambar: grafik hubungan lebar tajuk dan diameter.
 
 ## Bab 9: Stok Karbon Seluruh Area dan Ketidakpastiannya
-Ringkasan: menjumlahkan karbon semua pohon, menambahkan biomassa akar, menghitung per hektar, dan menyatakan rentang ketidakpastian.
+Ringkasan: menjumlahkan karbon semua pohon, menambahkan biomassa akar, menghitung per hektare, dan menyatakan rentang ketidakpastian.
 Tujuan: pembaca bisa menyajikan total karbon area beserta tingkat keyakinannya.
-Gambar: peta kepadatan karbon per hektar.
+Gambar: peta kepadatan karbon per hektare.
 
 ## Bab 10: Laporan Karbon yang Dipercaya dan Langkah Berikutnya
 Ringkasan: isi laporan, peta, pemantauan berkala, batasan metode, dan peluang pekerjaan di bidang karbon.

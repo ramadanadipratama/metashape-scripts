@@ -19,7 +19,7 @@ Ini alur dasarnya di **Agisoft Metashape**. Nama menu bisa sedikit berbeda antar
 6. **Build Orthomosaic** di atas DSM.
 7. **Export** DSM dan ortofoto sebagai **GeoTIFF**, dengan sistem koordinat yang sama.
 
-Proses ini bisa makan waktu berjam-jam untuk ratusan hektar. Jalankan semalaman, dan pastikan laptop tidak masuk mode tidur.
+Proses ini bisa makan waktu berjam-jam untuk ratusan hektare. Jalankan semalaman, dan pastikan laptop tidak masuk mode tidur.
 
 > **Tips:** Simpan proyek Metashape setelah setiap langkah. Kalau listrik padam di tengah proses point cloud, kamu tidak perlu mengulang dari awal.
 

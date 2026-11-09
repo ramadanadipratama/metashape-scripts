@@ -2,7 +2,7 @@
 
 Pernah ditanya "hutan ini nyimpan karbon berapa ton?" lalu cuma bisa jawab "kira-kira"?
 
-Kamu mungkin sudah jago menerbangkan drone, atau sudah bertahun-tahun keluar-masuk hutan. Tapi begitu diminta angka karbon, semuanya terasa gelap. Rumusnya kelihatan rumit, istilahnya asing, dan cara lama terdengar mustahil: mengukur pohon satu per satu di ratusan hektar.
+Kamu mungkin sudah jago menerbangkan drone, atau sudah bertahun-tahun keluar-masuk hutan. Tapi begitu diminta angka karbon, semuanya terasa gelap. Rumusnya kelihatan rumit, istilahnya asing, dan cara lama terdengar mustahil: mengukur pohon satu per satu di ratusan hektare.
 
 Buku ini mengubah itu. Kamu akan belajar menghitung pohon langsung dari foto udara, mengukur tinggi dan tajuknya dengan fotogrametri, lalu mengubahnya jadi ton karbon dan ton CO₂. Hasilnya angka yang bisa kamu pertanggungjawabkan, bukan tebakan.
 
