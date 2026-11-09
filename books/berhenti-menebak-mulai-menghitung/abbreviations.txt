@@ -1,0 +1,42 @@
+# Singkatan yang dibuat tebal + hitam saat build (satu per baris, peka huruf besar/kecil).
+# Tidak dipakai di judul bab/subbab (judul sudah tebal).
+# Sengaja tidak dimasukkan: CO₂ (rumus kimia), merek (QGIS, DJI, NVIDIA), satuan (GB, TB, MP),
+# kode plot (P07), nama model (M3E, P1), fungsi Excel (LN), nama file (IMG).
+AGB
+AI
+BGB
+BIG
+CD
+CHM
+CSR
+CSV
+DBH
+DEM
+DEMNAS
+DSM
+DTM
+FN
+FP
+GCP
+GIS
+GNSS
+GPS
+GPU
+GSD
+HP
+ID
+IPCC
+LiDAR
+LSM
+P3K
+PPK
+RAM
+RGB
+RTK
+SE
+SNI
+SRN PPI
+SSD
+TP
+VRAM
+VTOL
