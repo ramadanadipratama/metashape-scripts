@@ -106,7 +106,7 @@ def build(slug: str) -> Path:
         text = f.read_text(encoding="utf-8")
         m = re.match(r"#\s+(.+)", text)
         title = m.group(1).strip() if m else f.stem
-        toc.append(f"{n}. {title}")
+        toc.append(f"Bab {n}. {title}")
         text = re.sub(r"^#\s+.+$", f"# Bab {n}: {title}", text, count=1, flags=re.M)
 
         def img(match):
@@ -120,13 +120,21 @@ def build(slug: str) -> Path:
         text = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", img, text)
         parts.append(text)
 
+    # Appendices (books/<slug>/appendix/*.md): added after the chapters, not numbered.
+    for f in sorted((book / "appendix").glob("*.md"), key=lambda p: p.name):
+        text = f.read_text(encoding="utf-8")
+        m = re.match(r"#\s+(.+)", text)
+        toc.append(None if not m else m.group(1).strip())
+        text = re.sub(r"^(#\s+.+)$", r"\1 {.unnumbered}", text, count=1, flags=re.M)
+        parts.append(text)
+
     head = "---\n" + json.dumps({
         "title": meta.get("title", slug),
         "subtitle": meta.get("subtitle", ""),
         "author": meta.get("author", ""),
         "lang": meta.get("language", "id"),
     }, ensure_ascii=False) + "\n---\n\n"
-    toc_md = "# Daftar Isi {.unnumbered}\n\n" + "\n".join(f"- Bab {line}" for line in toc) + "\n\n"
+    toc_md = "# Daftar Isi {.unnumbered}\n\n" + "\n".join(f"- {line}" for line in toc if line) + "\n\n"
     md = head + toc_md + "\n\n".join(parts)
 
     dist = book / "dist"
