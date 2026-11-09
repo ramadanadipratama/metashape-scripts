@@ -11,7 +11,7 @@ Naskah: script.md · Dibuat oleh: Alex (Storyboard Specialist)
 | Audiens | Pilot drone pemula dan orang kehutanan |
 | Gaya | Ilustrasi Kira dari ebook (hutan hijau, emas, cyan) + teks tebal di atas gradien gelap. Dipilih supaya video, sampul, dan isi ebook terasa satu brand |
 | Audio | Tanpa voice-over, tanpa musik (musik bisa ditambah di Instagram) |
-| SFX | Nyala, detail per scene di kolom SFX |
+| SFX | Revisi 1: dihapus. Video tanpa suara, musik dipilih di Instagram. Kolom SFX di bawah hanya arsip |
 | Aset | cover-art.png (sampul Kira tanpa teks), bab05.png, bab07.png, bab09.png, cover.png (sampul dengan teks), semua dari `books/berhenti-menebak-mulai-menghitung/images/` di repo |
 
 ## Palet & tipografi
