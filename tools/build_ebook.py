@@ -44,6 +44,11 @@ def make_reference_docx(path: Path) -> None:
                 # Every chapter (Heading 1) starts on a new page.
                 s = re.sub(r'(<w:style w:type="paragraph" w:styleId="Heading1">.*?<w:pPr>)',
                            r'\1<w:pageBreakBefore/>', s, count=1, flags=re.S)
+                # Character style for English terms: italic + teal.
+                s = s.replace("</w:styles>",
+                              '<w:style w:type="character" w:customStyle="1" w:styleId="IstilahInggris">'
+                              '<w:name w:val="Istilah Inggris"/><w:rPr><w:i/><w:iCs/><w:color w:val="1B7F6E"/></w:rPr>'
+                              '</w:style></w:styles>', 1)
                 data = s.encode("utf-8")
             elif item.filename == "word/_rels/document.xml.rels":
                 s = data.decode("utf-8").replace(
@@ -77,6 +82,43 @@ def chapter_files(book: Path, meta: dict) -> list:
     return sorted((book / "chapters").glob("*.md"), key=lambda p: p.name)
 
 
+EN_STYLE = "Istilah Inggris"
+
+
+def load_terms(book: Path) -> list:
+    f = book / "english-terms.txt"
+    if not f.exists():
+        return []
+    terms = [ln.strip() for ln in f.read_text(encoding="utf-8").splitlines()]
+    return sorted({t for t in terms if t and not t.startswith("#")}, key=len, reverse=True)
+
+
+def style_english(text: str, terms: list) -> str:
+    """Mark English terms (and text already in *italics*) with the "Istilah Inggris" style."""
+    if not terms:
+        return text
+    keep = []
+
+    def protect(m):
+        keep.append(m.group(0))
+        return f"\x00{len(keep) - 1}\x00"
+
+    span = lambda t: f'[{t}]{{custom-style="{EN_STYLE}"}}'
+    text = re.sub(r"```.*?```", protect, text, flags=re.S)          # code blocks
+    text = re.sub(r"`[^`\n]+`", protect, text)                      # inline code
+    text = re.sub(r"!\[[^\]]*\]\([^)]*\)(\{[^}]*\})?", protect, text)  # images
+    text = re.sub(r"\]\([^)]*\)", protect, text)                   # link targets
+    # Text already in *italics* (not **bold**) -> styled span
+    def italic(m):
+        keep.append(span(m.group(1)))
+        return f"\x00{len(keep) - 1}\x00"
+
+    text = re.sub(r"(?<!\*)\*(?![\s*])([^*\n]+?)(?<![\s*])\*(?!\*)", italic, text)
+    pat = re.compile(r"(?<!\w)(" + "|".join(re.escape(t) for t in terms) + r")(?!\w)", re.I)
+    text = pat.sub(lambda m: span(m.group(1)), text)
+    return re.sub(r"\x00(\d+)\x00", lambda m: keep[int(m.group(1))], text)
+
+
 def compress_image(src: Path, dst_dir: Path) -> Path:
     """Shrink an illustration to a JPEG (max 1600 px wide) so the .docx stays small."""
     try:
@@ -100,6 +142,7 @@ def build(slug: str) -> Path:
         sys.exit(f"Tidak ada bab di {book / 'chapters'}")
 
     parts, toc, missing = [], [], []
+    terms = load_terms(book)
     workdir = tempfile.TemporaryDirectory()
     imgdir = Path(workdir.name)
     for n, f in enumerate(files, 1):
@@ -118,7 +161,7 @@ def build(slug: str) -> Path:
             return f"![{alt}]({compress_image(p, imgdir)}){{width=100%}}"
 
         text = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", img, text)
-        parts.append(text)
+        parts.append(style_english(text, terms))
 
     # Appendices (books/<slug>/appendix/*.md): added after the chapters, not numbered.
     for f in sorted((book / "appendix").glob("*.md"), key=lambda p: p.name):
@@ -126,7 +169,7 @@ def build(slug: str) -> Path:
         m = re.match(r"#\s+(.+)", text)
         toc.append(None if not m else m.group(1).strip())
         text = re.sub(r"^(#\s+.+)$", r"\1 {.unnumbered}", text, count=1, flags=re.M)
-        parts.append(text)
+        parts.append(style_english(text, terms))
 
     head = "---\n" + json.dumps({
         "title": meta.get("title", slug),

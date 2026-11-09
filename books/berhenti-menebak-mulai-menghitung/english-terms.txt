@@ -1,0 +1,56 @@
+# Istilah bahasa Inggris yang ditulis miring + berwarna saat build (satu per baris, tidak peka huruf besar/kecil).
+# Teks yang sudah ditulis *miring* di naskah otomatis ikut diberi gaya yang sama.
+# Tidak termasuk: singkatan (CHM, GSD, RTK, ...), nama produk/software (Metashape, QGIS, DeepForest, ...),
+# nama menu software (Align Photos, Build DEM, ...), dan isi kode.
+above-ground biomass
+below-ground biomass
+carbon pools
+carbon pool
+canopy height model
+digital surface model
+digital terrain model
+ground sampling distance
+ground control point
+diameter at breast height
+real-time kinematic
+post-processed kinematic
+root-to-shoot ratio
+tree counting
+local maxima
+mechanical shutter
+rolling shutter
+check point
+point cloud
+terrain follow
+depth filtering
+flagging tape
+phi band
+tally sheet
+true positive
+false positive
+false negative
+over-detection
+under-detection
+full-frame
+fixed-wing
+f-score
+precision
+recall
+window
+overlap
+drone
+software
+laptop
+plugin
+spreadsheet
+file
+layout
+baseline
+resample
+noise
+layer
+coding
+workstation
+remote
+zoom
+shapefile
