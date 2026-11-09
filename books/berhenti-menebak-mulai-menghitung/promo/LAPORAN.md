@@ -31,3 +31,20 @@
 Project Remotion ada di folder scratchpad sesi (sementara). Teks ada di bagian atas `src/scenes/Scenes.tsx`, daftar SFX di `src/ReelsEbookKarbon.tsx`.
 1. `npm run studio` untuk preview
 2. `npm run render` untuk render ulang
+
+---
+
+# Versi Story Instagram
+
+- File video: books/berhenti-menebak-mulai-menghitung/promo/story-ebook-karbon-hutan.mp4
+- Format: 1080x1920 (9:16), 30 fps, 15 detik (satu potongan Story), H.264 yuv420p bt709, tanpa audio, 10 MB
+- Komposisi Remotion: `StoryEbookKarbon` (src/scenes/Story.tsx), render: `npm run render:story`
+- Zona aman Story: teks mulai y 290 (di bawah nama akun), elemen terbawah (panah) berhenti di y ±1510 (di atas kolom "Kirim pesan")
+
+| # | Waktu | Isi |
+|---|---|---|
+| 1 | 0–3 dtk | Hutan berkabut + drone: "Hutan ini simpan karbon berapa ton?" → "Masih jawab kira-kira?" |
+| 2 | 3–6 dtk | Tim lapangan mengukur pohon: "Ngukur pohon satu per satu?" |
+| 3 | 6–10 dtk | Tajuk + lingkaran deteksi → peta karbon: "Drone menghitung pohonnya dari udara" → "Jadi peta ton karbon per hektare" |
+| 4 | 10–12,5 dtk | Sampul ebook masuk |
+| 5 | 12,5–15 dtk | "Berhenti menebak. Mulai menghitung." + "Balas story ini, aku kirim link-nya" + panah ke kolom pesan |
